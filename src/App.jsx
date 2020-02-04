@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Image from './components/Logo';
 import './scss/App.scss';
 
 class App extends Component{
@@ -8,7 +9,9 @@ class App extends Component{
         <div class="stars"></div>
         <div class="twinkling"></div>
         <div class="clouds"></div>
-        <h1>alguma coisa</h1>
+        <div className="container">
+          <Logo/>
+        </div>
     </div>
       );
   }
