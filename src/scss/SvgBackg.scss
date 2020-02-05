@@ -1,0 +1,62 @@
+$transition-type: ease-in-out;
+$skull-length: 5804.49462890625;
+$nose-length: 862.5042114257812;
+$skull-animation-time: 5s;
+$nose-animation-time: $skull-animation-time;
+
+.helmet {
+  &__skull,
+  &__nose {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 4px;
+  }
+  
+  &__skull {
+    stroke: white;
+    fill: none;
+    stroke-dasharray: $skull-length;
+    stroke-dashoffset: $skull-length;
+    animation: skull $skull-animation-time $transition-type alternate infinite;
+  }
+  &__nose {
+    stroke: white;
+    fill: none;
+    stroke-dasharray: $nose-length;
+    stroke-dashoffset: $nose-length;
+    animation: nose $nose-animation-time $transition-type alternate infinite;
+  }
+}
+
+@keyframes skull {
+  from {
+    stroke-dashoffset: $skull-length;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes nose {
+  from {
+    stroke-dashoffset: $nose-length;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+s
+body {
+  background-color: #000;
+}
+
+.container {
+  text-align: center;
+  padding: 1em;
+}
+
+svg {
+  width: 25%;
+  margin-left: 40%;
+  margin-top: 2%;
+}

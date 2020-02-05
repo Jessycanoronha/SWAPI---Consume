@@ -23,13 +23,15 @@ body {
     height: 80%;
   }
   .app__logo {
-          margin-left: 40%;
-          width: 30%;
-          height: 30%;
+          margin-left: 17%;
+          margin-top: -10%;
+          height: 49%;
+          width: 75%;
     }
 }
 
 @import 'ImageLogo.scss';
-@import 'ImageBackg.scss';
+@import 'SvgBackg.scss';
+@import 'Parallax.scss';
 @import 'Btns.scss';
 @import 'ButtonsInit.scss';
