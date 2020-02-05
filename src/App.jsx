@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import ImageLogo from './components/ImageLogo';
 import ImageBackg from './components/ImageBackg';
-
-import './scss/ImageBackg.scss';
+import ButtonsInit from './components/ButtonsInit';
 
 import './scss/App.scss';
 
@@ -11,12 +10,11 @@ class App extends Component{
     return (
       <div className="App">
           <div className="container">
-                <ImageLogo/>
-
-                <ImageBackg/>
-    </div>
-                
-    </div>
+                <ImageLogo />
+                <ImageBackg />
+                <ButtonsInit />
+          </div>
+      </div>
       );
   }
 

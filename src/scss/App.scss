@@ -20,7 +20,7 @@ body {
 
   @media (min-width: 767px) {
     padding-top: 0;
-    height: auto;
+    height: 80%;
   }
   .app__logo {
           margin-left: 40%;
@@ -28,3 +28,8 @@ body {
           height: 30%;
     }
 }
+
+@import 'ImageLogo.scss';
+@import 'ImageBackg.scss';
+@import 'Btns.scss';
+@import 'ButtonsInit.scss';
