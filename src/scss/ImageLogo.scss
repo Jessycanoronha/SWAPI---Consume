@@ -1,7 +1,6 @@
 .app {
   &__logo {
     display: block;
-    margin: 0 auto;
     transform: scale(0.4);
     transition: 2s;
 
@@ -21,5 +20,8 @@
         transform: scale(0.4);
       }
     }
+ 
+
   }
+  
 }
