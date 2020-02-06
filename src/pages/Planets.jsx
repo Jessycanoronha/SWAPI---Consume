@@ -44,7 +44,7 @@ class Planets extends Component {
 
         setTimeout(()=>{
             this.changeLoadingState();
-        }, 1300);
+        }, 1000);
     }
 
     componentDidMount() {
@@ -74,9 +74,9 @@ class Planets extends Component {
                     
                     </div>
                     <div className="planets__buttons">
-                        <button onClick={()=>this.randomPlanets()} className="button">Next</button>
                         <Btns text="Home" path="/" />
-                        <Btns text="About" path="/" />
+                        <button onClick={()=>this.randomPlanets()} className="button">Next</button>
+                        <Btns text="About" path="/about1" />
                         <Btns text="About Me" path="/aboutme"/>
                 </div>
                 </div>
