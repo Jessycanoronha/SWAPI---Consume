@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import About1 from './pages/About1';
+import Planets from './pages/Planets';
+import AboutTheApp from './pages/AboutTheApp';
+import AboutMe from './pages/AboutMe';
+
+
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
@@ -8,6 +14,11 @@ ReactDOM.render(
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact={true} component={App} />
+                <Route path="/about1" exact={true} component={About1} />
+				<Route path="/aboutme" exact={true} component={AboutMe} />
+                <Route path="/planets" exact={true} component={Planets} />
+                <Route path="/abouttheapp" exact={true} component={AboutTheApp} />
+
                 
             </Switch>
         </BrowserRouter>
