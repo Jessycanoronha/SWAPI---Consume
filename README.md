@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Star Wars the game by Jéssyca
+Repositório criado para star wars the game, que consite no desenvolvimento de um jogo para descobrir o nome de um planeta de uma das franquias mais conhecidas do mundo, Star Wars. No card, são exibidas as informações de nome, terreno, clima e em quantos filmes esse planeta aparece.
 
-## Available Scripts
+Star wars game desenvolvido com react, react router e axios.
 
-In the project directory, you can run:
+### Conteúdo
++ Visão geral do conteúdo
+    + Tecnologias e recursos utilizados
+    + Documentação da SWAPI API
+    + Informações iniciais
+    + Clonando o repositório
+    + Versão compilada
+    + Como instalar
+        + Browser
+        + Local
+          
+    + Como foi feito?
 
-### `yarn start`
+### Visão geral do projeto
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Tecnologias
+- HTML5
+- SCSS
+- [React.js](https://www.reactjs.org)
+- Jquery
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Recursos externos
+- Create-react-app boilerplate
+- Spin Kit
+- Figma para o protótipo
+- Netlify para o deploy
 
-### `yarn test`
+### Documentação Swapi API
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A documentação da API utilizada está disponível em :[SWAPI](https://swapi.co)
 
-### `yarn build`
+#### Para realizar as ações a seguir, é necessário ter instalado em seu computador o _git_ e e o _nodejs_.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [_Git_](https://git-scm.com)
+* [_Node.js - Windows/Mac_](http://nodejs.org/en/download)
+* [_Node.js - unix systems_](http://nodejs.org/en/download)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Clonando o repositório
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para efetuar as alterações de código, é necessário que efetue a clonagem do repositório. ANtes de clonar é necessário que realize um _fork_, criar uma cópia para o seu github. Para isso é necessário subir a página e clicar no botão com o nome _fork_ e aguardar uns minutos. Logo apóes é só clicar em _clone or download_ e copiar a url do repositório
+Abrindo o git bash para clonar o repositório, é necessário digitar a seguinte linha de código e informar a URL copiada anteriormente.
 
-### `yarn eject`
+```
+git clone <url-do-repositorio>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+### Instalando as dependências
+Basta abrir o prompt de comando do Node.js, caso seja linux utilize o terminal. Acesse a pasta do repositório e insira o seguinte comando.
+```
+yarn install
+```
+## Servidor de desenvolvimento
+```
+yarn run serve
+```
+O código vai rodar o plugin _serve_ e gerar um servidor de desenvolvimento (```http://localhost:8080```)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Versão compilada
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```yarn run build```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
