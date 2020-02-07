@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-y: auto;
 }
 
 .App {
@@ -20,13 +21,12 @@ body {
 
   @media (min-width: 767px) {
     padding-top: 0;
-    height: 80%;
   }
   .app__logo {
-          margin-left: 12%;
+          margin-left: 22%;
           margin-top: -10%;
-          height: 49%;
-          width: 75%;
+          height: 67%;
+          width: 50%;
     }
 }
 
@@ -38,3 +38,4 @@ body {
 @import 'LongTime.scss';
 @import 'About1.scss';
 @import 'AboutMe.scss';
+@import 'Motivation.scss';

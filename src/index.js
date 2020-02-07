@@ -4,6 +4,7 @@ import App from './App';
 import About1 from './pages/About1';
 import Planets from './pages/Planets';
 import AboutMe from './pages/AboutMe';
+import Motivation from './pages/Motivation';
 
 
 import * as serviceWorker from './serviceWorker';
@@ -15,7 +16,8 @@ ReactDOM.render(
                 <Route path="/" exact={true} component={App} />
                 <Route path="/about1" exact={true} component={About1} />
 				<Route path="/aboutme" exact={true} component={AboutMe} />
-                <Route path="/planets" exact={true} component={Planets} />
+				<Route path="/motivation" exact={true} component={Motivation} />
+				<Route path="/planets" exact={true} component={Planets} />
 
                 
             </Switch>

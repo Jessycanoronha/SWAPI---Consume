@@ -765,8 +765,8 @@ body{
    width:$p * 2.5;
    height:$p;
    position: absolute;
-   top:0;
-   left:0;
+   top:-30px;
+   left:-200px;
    @include animation(anim 1s ease infinite);
    @include anim3();
 }

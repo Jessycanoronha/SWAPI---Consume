@@ -6,8 +6,10 @@ class ButtonsInit extends Component{
     return (
       <div className="content__menu hide">
            <Btns text="Start Game" path="/planets" />
-           <Btns text="About" path="/about1" />
+           <Btns text="About the app" path="/about1" />
            <Btns text="About me" path="/aboutme" />
+           <Btns text="Motivation" path="/motivation" />
+
     </div>
       )
   }

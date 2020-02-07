@@ -93,19 +93,19 @@ button{border:none;
 button:focus {outline:0;}
 
 .card {
-    @include object(892px,auto,null);
-    @include transPos(50%,null,null,50%,-50%,-50%);
+    @include object(30%,auto,null);
+    @include transPos(40%,null,null,35%,-50%,-50%);
     display:flex;
     align-items :center;
     .left{
-        @include object(480px,553px,#CC3843);
+        @include object(50%,553px,#CC3843);
         border-radius:23px;
         display:flex;
         align-items:center;
         .wordmark {
             opacity: 0.2;
             transform :rotate(-90deg) scale(1.2);
-            margin-left: -90px;
+            margin-left: -40px;
         }
     }
     .right{
@@ -226,22 +226,3 @@ button:focus {outline:0;}
     }
 }
 
-@media screen and (max-width:576px) {
-    .card {
-        transform:rotate(90deg) scale(0.7) translate(calc(50% - 25vh),50%);
-        position:static;
-    }
-}
-
-
-.youtube {
-    font-family: 'Open Sans',sans-serif;
-    text-decoration:none;
-    @include transPos(null,2.5vw,2vw,null,null,null);
-    animation:clickMe 1s ease-in-out infinite;
-    @keyframes clickMe {
-        50%{
-            opacity:0.5;
-        }
-    }
-}
