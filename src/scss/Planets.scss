@@ -1,228 +1,282 @@
-.planets {
-    &__container {
-        max-width: 500px;
-        width: 100%;
-        height: 100vh;
-        margin: 0 auto;
-        color: #e1b100;
-        font-family: 'News Cycle', sans-serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
-        .button {
-            margin-bottom: 0;
-            margin-left: 15px;
-
-            &:first-child {
-                margin-left: 0;
-            }
-        }
-    }
-
-    &__content {
-        min-height: 300px;
-        background-color: #000;
-        border: 4px solid #e1b100;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 5px;
-        padding: 10px;
-        position: relative;
-
-        p {
-            text-align: center;
-            letter-spacing: 3px;
-
-            span {
-                color: #ffffff;
-                font-weight: bold;
-            }
-        }
-
-    }
-
-    &__name {
-        text-align: center;
-        border-bottom: 1px solid #e1b100;
-        margin: 0;
-        padding: 20px 0px;
-        letter-spacing: 3px;
-    }
-
-    &__buttons {
-        margin-top: 178px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+.center {
+  font-family: Arial, Verdana, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
 }
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
-
-@mixin object($width, $height, $bg) {
-    width: $width;
-    height: $height;
-    background: $bg;
-}
-
-@mixin transPos($top, $right, $bottom, $left,$transX,$transY) {
-    position: absolute;
-    top: $top;
-    left: $left;
-    right: $right;
-    bottom: $bottom;
-    transform:translate($transX,$transY);
-}
-
-* {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-button{border:none;
-    cursor:pointer;}
-button:focus {outline:0;}
 
 .card {
-    @include object(30%,auto,null);
-    @include transPos(40%,null,null,35%,-50%,-50%);
-    display:flex;
-    align-items :center;
-    .left{
-        @include object(50%,553px,#CC3843);
-        border-radius:23px;
-        display:flex;
-        align-items:center;
-        .wordmark {
-            opacity: 0.2;
-            transform :rotate(-90deg) scale(1.2);
-            margin-left: -40px;
-        }
-    }
-    .right{
-        @include object(654px,479px,#0c1f2c);
-        position: absolute;
-        left:-10%;
-        transform:translateX(50%);
-        border-radius:23px;
-        .helmet {
-            @include transPos(50%,null,null,null,-50%,-50%);
-        }
-        .productInfo {
-            @include object(300px,300px,null);
-            margin: 50px 0 0 235px;
-            color:#fff;
-            font-family: 'Open Sans', sans-serif;
-            h1 {
-                font-weight: 800;
-                line-height: 46px;
-                font-size: 40px;
-                margin-bottom: 15px;
-            }
-            h2 {
-                font-weight: 300;
-                font-size: 32px;
-                letter-spacing: 1.6px;
-                margin-bottom: 30px;
-            }
-            .details {
-                height:145px;
-                .size,
-                .durability {
-                    width:50%;
-                    float:left;
-                }
-                .size {
-                    border-right:1px solid #CB1F40;
-                    padding: 30px 0;
-                }
-                .durability {
-                    text-align:center;
-                    h4 {
-                        margin-top: 20px;
-                        margin-bottom: 30px;
-                    }
-                }
-            }
-            button {
-                height:48px;
-                background: #CB2140;
-                border-radius:90px;
-                font-weight: 300;
-                line-height: 35px;
-                font-size: 14px;
-                padding: 0 24px;
-                color:#fff;
-            }
-            i.fav {
-                font-size: 12px;
-                margin:0 12px 0 24px;
-                color:#CB2140;
-            }
-            a {
-                font-size: 12px;
-                color:#fff;
-                opacity: 0.3;
-                text-decoration:none;
-            }
-            
-            h3{
-                font-weight: bold;
-                line-height:normal;
-                font-size:12px;
-                letter-spacing:3px;
-                margin-bottom:15px;
-            }
-            h4 {
-                font-weight: bold;
-                line-height:normal;
-                font-size:12px;
-                letter-spacing:3px;
-                margin-bottom:15px;
-            }
-            p {
-                @include object(30px,30px,null);
-                display:inline-block;
-                line-height:normal;
-                text-align:center;
-                font-weight:300px;
-                line-height:28px;
-                font-size:14px;
-                border-radius:50%;
-                transition:0.3s linear;
-                border:1px solid transparent;
-                cursor:pointer;
-                &:hover {
-                    border:1px solid #CB1F40;
-                }
-                &:nth-of-type(1) {
-                    border:1px solid #CB1F40;
-                }
-            }
-        }
-    }
+  width: 1220%;
+  height: 330px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+  margin-top: 5em;
 }
 
-.slider {
-    @include object(60px,60px,#fff);
-    border-radius:50%;
-    line-height:70px;
-    text-align:center;
-    margin-left:-30px;
-    box-shadow:0 0 60px rgba(#000,0.2);
-    color:#CB1F40;
-    cursor:pointer;
-    &:nth-of-type(2) {
-        @include transPos(50%,-60px,null,null,-50%,-50%);
-    }
+.card h1 {
+  text-align: center;
 }
+
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(#cc3843, #EE786E);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card.green .additional {
+  background: linear-gradient(#92bCa6, #A2CCB6);
+}
+
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+  width: 80%;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .user-card svg {
+  top: 50%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 6%;
+  margin-left: 54%;
+  font-size: 128%;
+}
+
+.card.green .additional .more-info h1 {
+  color: #224C36;
+}
+
+.card .additional .coords {
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 9rem;
+  font-weight: 600;
+  width:11rem;
+}
+
+
+.card .additional .coords span + span {
+  float: right;
+}
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+.card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats i {
+  display: block;
+}
+
+.card .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
+.planet__name{
+    font-size: 4em;
+    margin-left: -2em;
+    -webkit-text-fill-color: gold;
+    -webkit-text-stroke-color: gold;
+}
+.planet__name-description{
+    font-size: 3em;
+    margin-left: 3.7em;
+    color: #ff6;
+    -webkit-text-fill-color: gold;
+    -webkit-text-stroke-color: gold;
+}
+.planet__featured{
+    color: #ff6;
+    margin-top: 2em;
+}
+
+   @media  (min-width: 320px) and (max-width: 600px) {
+   .card .general .more{
+        font-size: .8em;
+        width: 26%;
+   }
+   .card{
+        width: 1100%;
+        margin-top: 155%;
+        margin-left: -47%;
+      }
+      .user-card img{
+        width: 80%;
+        height: 35%;
+        margin-top: 60%;
+      }
+      .planet__name{
+        font-size: 1em;
+        margin-left: 11em;
+        margin-top: 10%;
+      }
+      .more{
+        font-size: 1em;
+        width: auto;
+        rigth: 13em;
+      }
+      .planet__name-description{
+        font-size: 1em;
+        margin-left: -60%;
+        margin-top: 10%;
+
+      }
+      .card .additional .coords{
+          font-size: .5rem;
+          margin-left: -10rem;
+          margin-top: 14%;
+          width: auto;
+
+
+      }
+      .coords__terrain{
+          font-size: .5rem;
+          margin-bottom: 2%;
+      }
+    }
+
+   @media (min-width: 320px) and (max-width: 600px) {
+      width: 34em;
+      margin-top:-6em;
+      margin-left: -9em;
+      .card .additional .coords{
+        font-size: 7rem;
+        width: 9rem;
+      }
+      .planet__name{
+        font-size: 3em;
+        margin-left: -5em;
+      }
+      .card .general .more{
+        font-size: .7em;
+        margin-left: -10em;
+      }
+      .card .general{
+        margin-left: -10em;
+      }
+      .coords div{
+        font-size: .8em;
+      }
+    }
+
+    @media (min-width: 600px) and (max-width: 900px) {
+      margin-left: 27%;
+      margin-top:-15%;
+      margin-left: -9em;
+      width: 46%;
+      height: 46%;
+      .card .additional .coords{
+        font-size: 7rem;
+
+      }
+    }
+
+   @media (min-width: 900px) and (max-width: 1200px)  {
+      width: 14em;
+      margin-top:-7em;
+      margin-left: -9em;
+    }
+    @media (min-width: 1800px)  {
+      width: 14em;
+      margin-top:-7em;
+      margin-left: -9em;
+    }
 

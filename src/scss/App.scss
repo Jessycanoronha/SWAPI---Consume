@@ -19,15 +19,26 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 767px) {
+  @media (max-width: 760px) {
     padding-top: 0;
-  }
+  
   .app__logo {
           margin-left: 22%;
-          margin-top: -10%;
-          height: 67%;
-          width: 50%;
+          margin-top: -13%;
+          height: 58%;
+          width: 55%;
     }
+  }
+  @media (max-width: 640px) {
+    padding-top: 0;
+  
+  .app__logo {
+          margin-left: -66%;
+          margin-top: -42%;
+          height: 57%;
+          width: 230%;
+    }
+  }
 }
 
 @import 'ImageLogo.scss';

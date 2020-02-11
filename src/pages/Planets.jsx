@@ -54,25 +54,38 @@ class Planets extends Component {
     render(){
         return(
 
-            <div className="card" >
+            <div className="container">
             
-                        <div className="left"> <img className="wordmark" src="http://res.cloudinary.com/prvnbist/image/upload/v1508603572/starwars.png" alt="star wars" />
-                   </div>
-                <div className="right">
-                <img className="helmet" src="http://res.cloudinary.com/jessycaroz/image/upload/v1581003120/star-wars-clipart-r2d2-4_t3bh2v.png" alt="helmet" height="480px" width="480px"/>
-                <div className="productInfo">
-                        <h1 className="">{this.state.planets.name}</h1>
-                        <h4><label>Population:</label> {this.state.planets.population}</h4>
-                        <h4><label>Climate:</label> {this.state.planets.climate}</h4>
-                        <h4><label>Terrain:</label> {this.state.planets.terrain}</h4>
+                <div className="center">
 
-                        <h4><label>Rotation period:</label> {this.state.planets.rotation_period}</h4>
-                        <h4><label>Surface Water:</label> {this.state.planets.surface_water}</h4>
-                        <h6><label>Featured in</label> {this.state.qtdFilms} <label>{this.state.qtdFilms <= 1 ? 'film': 'films'}</label></h6>
-                
-                        {this.renderLoading()}
-                    
+                  <div className="card">
+                    <div className="additional">
+                      <div className="user-card">
+                          <img src="https://res.cloudinary.com/jessycaroz/image/upload/v1581003120/star-wars-clipart-r2d2-4_t3bh2v.png" height="80%" alt=" "/>
+                            </div>
+                      <div className="more-info">
+                        <h1 className="planet__name-description">{this.state.planets.name}</h1>
+                        <div className="coords">
+                          <div>Planet name: {this.state.planets.name}</div>
+                          <div>Climate: {this.state.planets.climate}</div>
+                        </div>
+                        <div className="coords">
+                          <div>Terrain :</div>
+                          <div className="coords__terrain"> {this.state.planets.terrain}</div>
+                          <div>Rotation period: {this.state.planets.rotation_period}</div>
+                          <div className="planet__featured">Featured in {this.state.qtdFilms} {this.state.qtdFilms <= 1 ? 'film': 'films'}</div>
+                        </div>
+                      </div>
+                      </div>
+                      <div className="general">
+                      <h1 className="planet__name">{this.state.planets.name}</h1>
+                      <span class="more">Mouse over the card for more info</span>
                     </div>
+                    </div>
+                    {this.renderLoading()}
+                </div>
+            
+              
                     <div className="planets__buttons">
                         <Btns text="Home" path="/" />
                         <button onClick={()=>this.randomPlanets()} className="button">Next</button>
@@ -81,7 +94,6 @@ class Planets extends Component {
                 </div>
                 </div>
                 
-            </div>
         )
     }
 }

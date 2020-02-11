@@ -16,6 +16,12 @@
     &:hover{
         background-color: #CC3843;
         color:#000;
+    }
+    @media (min-width: 320px) {
+        margin-top: -2%;
+        margin-bottom: 7%;
+        margin-left: 2%;
+        
     }    
     @media (min-width: 767px) {
         margin-bottom: 0;
