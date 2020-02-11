@@ -10,12 +10,11 @@ Star wars game desenvolvido com react, react router e axios.
     - [Documentação da SWAPI API](#documentação)
     - Informações iniciais
     - Clonando o repositório
-    - Versão compilada
-    - Como instalar
+    - [Versão compilada](#versão compilada)
+    - [Como instalar](#instalando dependências)
         + Browser
         + Local
-          
-    - Como foi feito?
+  
 
 ### Visão geral do projeto
 
@@ -23,6 +22,7 @@ Star wars game desenvolvido com react, react router e axios.
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [SCSS](https://sass-lang.com/documentation/syntax)
 - [React.js](https://www.reactjs.org)
+- Axios, para fazer requisições a API
 - Um pouco de[Jquery](https://jquery.com/)
 - Photoshop
 - Figma para o [protótipo](https://www.figma.com/file/o5wZP76U80DLHAfiobQswT/SWAPI?node-id=0%3A1)
@@ -33,7 +33,7 @@ Star wars game desenvolvido com react, react router e axios.
 ### Recursos externos
 - [Create-react-app](https://github.com/facebook/create-react-app) 
 - [Spin Kit](https://tobiasahlin.com/spinkit/)
-- [Netlify](https://www.netlify.com/)
+- [Netlify](https://www.netlify.com/), para hospedar 
 
 ### Documentação Swapi API
 
@@ -70,4 +70,8 @@ O código vai rodar o plugin _serve_ e gerar um servidor de desenvolvimento (```
 
 Use o seguinte comando para obter a versão compilada, ou, build do projeto. Essa pasta foi a que usei para dar deploy no netlify.
 ```yarn run build```
+
+## Melhorias
+
+Pesquisei e vi que seria interessante armazenar o cache, para não ser necessário fazer muitas requisições, o que pode afetar na performance.
 
