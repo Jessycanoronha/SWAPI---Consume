@@ -1,4 +1,5 @@
 # Star Wars the game by Jéssyca
+<img src="/capa.png" alt="image"/>
 Repositório criado para star wars the game, que consite no desenvolvimento de um jogo para descobrir o nome de um planeta de uma das franquias mais conhecidas do mundo, Star Wars. No card, são exibidas as informações de nome, terreno, clima e em quantos filmes esse planeta aparece.
 
 Star wars game desenvolvido com react, react router e axios.
