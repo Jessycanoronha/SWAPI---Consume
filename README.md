@@ -4,31 +4,33 @@ Repositório criado para star wars the game, que consite no desenvolvimento de u
 Star wars game desenvolvido com react, react router e axios.
 
 ### Conteúdo
-+ Visão geral do conteúdo
-    + Tecnologias e recursos utilizados
-    + Documentação da SWAPI API
-    + Informações iniciais
-    + Clonando o repositório
-    + Versão compilada
-    + Como instalar
+- Visão geral do conteúdo
+    - [Tecnologias e recursos utilizados](#tecnologias)
+    - [Documentação da SWAPI API](#documentação)
+    - Informações iniciais
+    - Clonando o repositório
+    - Versão compilada
+    - Como instalar
         + Browser
         + Local
           
-    + Como foi feito?
+    - Como foi feito?
 
 ### Visão geral do projeto
 
 #### Tecnologias
-- HTML5
-- SCSS
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
+- [SCSS](https://sass-lang.com/documentation/syntax)
 - [React.js](https://www.reactjs.org)
-- Jquery
+- [Jquery](https://jquery.com/)
+- [Background parallax](https://codemyui.com/parallax-pixel-stars-using-pure-css/)
+- [Intro star wars](https://dev.to/christopherkade/developing-the-star-wars-opening-crawl-in-htmlcss-2j9e)
+- [Loader](https://codepen.io/XABOK/pen/OXAzXP) 
 
 ### Recursos externos
-- Create-react-app boilerplate
-- Spin Kit
-- Figma para o protótipo
-- Netlify para o deploy
+- [Create-react-app](https://github.com/facebook/create-react-app) 
+- [Spin Kit](https://tobiasahlin.com/spinkit/)
+- [Netlify](https://www.netlify.com/)
 
 ### Documentação Swapi API
 
@@ -50,7 +52,7 @@ git clone <url-do-repositorio>
 
 ```
 ### Instalando as dependências
-Basta abrir o prompt de comando do Node.js, caso seja linux utilize o terminal. Acesse a pasta do repositório e insira o seguinte comando.
+Basta abrir o prompt de comando do Node.js, caso seja linux utilize o terminal. Entre na pasta do repositório e insira o seguinte comando.
 ```
 yarn install
 ```
@@ -63,5 +65,6 @@ O código vai rodar o plugin _serve_ e gerar um servidor de desenvolvimento (```
 
 ### Versão compilada
 
+Use o seguinte comando para obter a versão compilada, ou, build do projeto. Essa pasta foi a que usei para dar deploy no netlify.
 ```yarn run build```
 
