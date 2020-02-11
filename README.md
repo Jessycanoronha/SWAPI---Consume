@@ -23,7 +23,9 @@ Star wars game desenvolvido com react, react router e axios.
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [SCSS](https://sass-lang.com/documentation/syntax)
 - [React.js](https://www.reactjs.org)
-- [Jquery](https://jquery.com/)
+- Um pouco de[Jquery](https://jquery.com/)
+- Photoshop
+- Figma para o [protótipo](https://www.figma.com/file/o5wZP76U80DLHAfiobQswT/SWAPI?node-id=0%3A1)
 - [Background parallax](https://codemyui.com/parallax-pixel-stars-using-pure-css/)
 - [Intro star wars](https://dev.to/christopherkade/developing-the-star-wars-opening-crawl-in-htmlcss-2j9e)
 - [Loader](https://codepen.io/XABOK/pen/OXAzXP) 
