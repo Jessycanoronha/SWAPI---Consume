@@ -61,7 +61,7 @@ yarn install
 ```
 ## Servidor de desenvolvimento
 ```
-yarn run serve
+yarn start
 ```
 O código vai rodar o plugin _serve_ e gerar um servidor de desenvolvimento (```http://localhost:8080```)
 
